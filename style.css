@@ -1,9 +1,34 @@
 :root {
-  --primary-color: #2e4dd6;
+  --primary-color: #616161;
+  --secondary-color: antiquewhite;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.heading {
+  text-align: left;
+  color: var(--secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 10%;
+  opacity: 0.75;
+}
+
+.heading a {
+  color: var(--secondary-color);
+  display: flex;
+  align-items: flex-start;
 }
