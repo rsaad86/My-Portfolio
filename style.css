@@ -11,6 +11,7 @@
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 .heading {
@@ -24,11 +25,32 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-position: 10%;
-  opacity: 0.75;
 }
 
-.heading a {
+.heading nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.heading nav ul li a {
   color: var(--secondary-color);
   display: flex;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.job p,
+.job-name,
+.hero p {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.job img {
+  width: 150px;
+  height: 100px;
 }
