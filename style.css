@@ -1,46 +1,108 @@
 :root {
   --primary-color: #616161;
-  --secondary-color: antiquewhite;
+  --secondary-color: rgb(129, 204, 248);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.heading {
+header {
   text-align: left;
   color: var(--secondary-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--primary-color);
-  background-position: center;
+  background-image: url(./texture1.jpg);
+  background-position: 100% center;
   background-attachment: fixed;
-  background-position: 10%;
+  background-size: 100% 100%;
+  height: 75px;
 }
 
-.heading nav ul {
+header h1 {
+  line-height: 70px;
+  padding-left: 20px;
+  border: 1px solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  width: 250px;
+  height: 100px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+header nav ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   list-style-type: none;
+  font-size: 21px;
 }
 
-.heading nav ul li a {
+header nav ul li a {
   color: var(--secondary-color);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   padding: 15px;
+  line-height: 50px;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active {
+  font-size: 23px;
+  transition: 0.5s;
+}
+
+.sub-head {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  border-width: 2px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 175px;
+  background-image: url(./texture2.jpg);
+  background-size: 100% 100%;
+}
+
+.hero {
+  -webkit-column-count: border-box;
+  -moz-column-count: border-box;
+  column-count: 2;
+  border-right: 6px solid var(--primary-color);
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -650px;
+  top: 20;
+}
+
+.hero h2 {
+  top: 0;
+  left: 0;
+  width: 250px;
+  position: absolute;
+}
+
+.hero-me p {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0px;
+}
+
+.job {
+  margin: 250px 0 0 0;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
 }
 
 .job p,
