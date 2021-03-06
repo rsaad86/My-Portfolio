@@ -20,7 +20,6 @@ header {
   justify-content: space-between;
   background-image: url(./texture1.jpg);
   background-position: 100% center;
-  background-attachment: fixed;
   background-size: 100% 100%;
   height: 75px;
 }
@@ -37,7 +36,8 @@ header h1 {
   background-color: var(--secondary-color);
 }
 
-header nav ul {
+header nav ul,
+.contact-info nav ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -46,7 +46,8 @@ header nav ul {
   font-size: 21px;
 }
 
-header nav ul li a {
+header nav ul li a,
+.contact-info nav ul li {
   color: var(--secondary-color);
   display: flex;
   flex-wrap: wrap;
@@ -73,12 +74,38 @@ header nav ul li a:active {
   background-size: 100% 100%;
 }
 
+.vertLine {
+  border-right: 8px solid var(--primary-color);
+  height: 120px;
+  position: absolute;
+  left: 50%;
+  margin-left: -650px;
+  top: 270px;
+  right: 80%;
+}
+
+.vertLine2 {
+  border-right: 8px solid var(--primary-color);
+  height: 225px;
+  position: absolute;
+  left: 50%;
+  margin-left: -650px;
+  top: 480px;
+  right: 80%;
+}
+
+.vertLine3 {
+  border-right: 8px solid var(--primary-color);
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-left: -650px;
+  top: 800px;
+  right: 80%;
+}
+
 .hero {
-  -webkit-column-count: border-box;
-  -moz-column-count: border-box;
-  column-count: 2;
-  border-right: 6px solid var(--primary-color);
-  height: 200px;
+  padding-top: 10px;
   position: absolute;
   left: 50%;
   margin-left: -650px;
@@ -86,33 +113,72 @@ header nav ul li a:active {
 }
 
 .hero h2 {
-  top: 0;
-  left: 0;
+  left: -150px;
   width: 250px;
   position: absolute;
+  line-height: 120px;
+  font-size: 50px;
 }
 
-.hero-me p {
-  display: flex;
-  flex-direction: column;
-  margin-right: 0px;
+.hero p {
+  width: 87%;
+  float: right;
+  padding: 10px;
 }
 
 .job {
   margin: 250px 0 0 0;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
 }
 
-.job p,
-.job-name,
-.hero p {
+.job h2 {
+  left: 150px;
+  width: 50px;
+  position: absolute;
+  line-height: 15px;
+  font-size: 50px;
+}
+.job p {
   display: flex;
   justify-content: flex-end;
 }
 
-.job img {
-  width: 150px;
+.tiles {
+  display: flex;
+  width: 75%;
+  height: 450px;
+  flex-flow: column;
+  flex-wrap: wrap;
+  /* justify-content: left; */
+  align-content: center;
+  list-style: none;
+}
+
+.tiles2 {
+  display: flex;
+  width: 130%;
   height: 100px;
+  flex-flow: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  align-content: center;
+  list-style: none;
+}
+
+.tiles3 {
+  display: flex;
+  width: 100%;
+  height: 900px;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  list-style: none;
+}
+
+.contact-info h2 {
+  left: 100px;
+  width: 50px;
+  position: absolute;
+  line-height: 75px;
+  font-size: 50px;
 }
