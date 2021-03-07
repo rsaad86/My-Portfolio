@@ -11,6 +11,10 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-color: rgb(222, 230, 235);
+}
+
 header {
   text-align: left;
   color: var(--secondary-color);
@@ -141,15 +145,6 @@ header nav ul li a:active {
 
 .job {
   margin: 250px 0 0 0;
-  /* display: grid;
-  height: 400px;
-  grid-template-columns: 70% 10px 90px 70px;
-  grid-template-rows: auto auto;
-  justify-content: space-evenly;
-  align-items: center; */
-  /* flex-wrap: wrap;
-  flex-direction: column;  
-  align-content: center; */
 }
 
 .job h2 {
@@ -169,19 +164,6 @@ header nav ul li a:active {
   flex-wrap: wrap;
 }
 
-/* .job:hover .tiles,
-.job:hover .tiles2,
-.job:hover .tiles2b,
-.job:hover .tiles3,
-.job:hover .tiles3b,
-.job:active .tiles,
-.job:active .tiles2,
-.job:active .tiles2b,
-.job:active .tiles3,
-.job:active .tiles3b {
-  opacity: 1;
-} */
-
 .tiles {
   display: flex;
   width: 95%;
@@ -191,6 +173,7 @@ header nav ul li a:active {
   justify-content: left;
   align-content: center;
   list-style: none;
+  opacity: 0.8;
 }
 
 .tiles2 {
@@ -200,6 +183,7 @@ header nav ul li a:active {
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  opacity: 0.8;
 }
 
 .tiles3 {
@@ -209,6 +193,7 @@ header nav ul li a:active {
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  opacity: 0.8;
 }
 
 .text-block h4,
@@ -237,6 +222,7 @@ header nav ul li a:active {
   padding: 30px;
   opacity: 0.55;
   border: 4px solid rgb(47, 169, 230);
+  z-index: 9999;
 }
 
 .text-block2 {
@@ -250,6 +236,7 @@ header nav ul li a:active {
   padding: 10px;
   opacity: 0.55;
   border: 4px solid rgb(47, 169, 230);
+  z-index: 9999;
 }
 
 .text-block3 {
@@ -263,6 +250,7 @@ header nav ul li a:active {
   padding: 10px;
   opacity: 0.55;
   border: 4px solid rgb(47, 169, 230);
+  z-index: 9999;
 }
 
 .text-block4 {
@@ -276,6 +264,7 @@ header nav ul li a:active {
   padding: 10px;
   opacity: 0.55;
   border: 4px solid rgb(47, 169, 230);
+  z-index: 9999;
 }
 
 .text-block5 {
@@ -288,6 +277,7 @@ header nav ul li a:active {
   padding: 10px;
   opacity: 0.55;
   border: 4px solid rgb(47, 169, 230);
+  z-index: 9999;
 }
 
 .contact-info h2 {
