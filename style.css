@@ -75,6 +75,18 @@ header nav ul li a:active {
   background-position: 100% center;
 }
 
+.sub-head h2 {
+  text-align: center;
+  font-size: 78px;
+  padding: 30px;
+}
+
+.hero h2,
+.job h2,
+.contact-info h2 {
+  color: var(--primary-color);
+}
+
 .vertLine {
   border-right: 8px solid var(--primary-color);
   height: 120px;
@@ -87,7 +99,7 @@ header nav ul li a:active {
 
 .vertLine2 {
   border-right: 8px solid var(--primary-color);
-  height: 225px;
+  height: 975px;
   position: absolute;
   left: 50%;
   margin-left: -650px;
@@ -101,7 +113,7 @@ header nav ul li a:active {
   position: absolute;
   left: 50%;
   margin-left: -650px;
-  top: 800px;
+  top: 1580px;
   right: 80%;
 }
 
@@ -152,22 +164,74 @@ header nav ul li a:active {
   justify-content: flex-end;
 }
 
+.job img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .job:hover .tiles,
+.job:hover .tiles2,
+.job:hover .tiles2b,
+.job:hover .tiles3,
+.job:hover .tiles3b,
+.job:active .tiles,
+.job:active .tiles2,
+.job:active .tiles2b,
+.job:active .tiles3,
+.job:active .tiles3b {
+  opacity: 1;
+} */
+
 .tiles {
   display: flex;
   width: 95%;
-  height: 450px;
+  height: 425px;
   flex-flow: column;
   flex-wrap: wrap;
-  /* justify-content: left; */
+  justify-content: left;
   align-content: center;
   list-style: none;
 }
 
+.tiles2 {
+  display: flex;
+  width: 95%;
+  height: 280px;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tiles3 {
+  display: flex;
+  width: 85%;
+  height: 360px;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.text-block h4,
+.text-block p,
+.text-block2 h4,
+.text-block2 p,
+.text-block3 h4,
+.text-block3 p,
+.text-block4 h4,
+.text-block4 p,
+.text-block5 h4,
+.text-block5 p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .text-block {
   position: absolute;
+  width: 699px;
   font-size: 20px;
-  bottom: -125px;
-  right: 62%;
+  bottom: -120px;
+  left: 26.7%;
   background-color: black;
   color: white;
   padding: 30px;
@@ -175,21 +239,12 @@ header nav ul li a:active {
   border: 4px solid rgb(47, 169, 230);
 }
 
-.tiles2 {
-  display: flex;
-  width: 130%;
-  height: 100px;
-  flex-flow: row;
-  /* flex-wrap: wrap; */
-  justify-content: space-evenly;
-  align-content: center;
-  list-style: none;
-}
-
 .text-block2 {
   position: absolute;
+  width: 300px;
   font-size: 17px;
-  bottom: -440px;
+  bottom: -395px;
+  left: 27.3%;
   background-color: black;
   color: white;
   padding: 10px;
@@ -197,26 +252,42 @@ header nav ul li a:active {
   border: 4px solid rgb(47, 169, 230);
 }
 
-.tiles2b {
-  display: flex;
-  width: 130%;
-  height: 100px;
-  flex-flow: row;
-  /* flex-wrap: wrap; */
-  justify-content: space-evenly;
-  align-content: center;
-  list-style: none;
+.text-block3 {
+  position: absolute;
+  width: 299px;
+  font-size: 17px;
+  bottom: -395px;
+  left: 49.77%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  opacity: 0.55;
+  border: 4px solid rgb(47, 169, 230);
 }
 
-.tiles3 {
-  display: flex;
-  width: 100%;
-  height: 900px;
-  flex-flow: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: center;
-  list-style: none;
+.text-block4 {
+  position: absolute;
+  width: 299px;
+  font-size: 17px;
+  bottom: -674px;
+  left: 27.4%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  opacity: 0.55;
+  border: 4px solid rgb(47, 169, 230);
+}
+
+.text-block5 {
+  position: absolute;
+  font-size: 17px;
+  bottom: -695px;
+  left: 52%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  opacity: 0.55;
+  border: 4px solid rgb(47, 169, 230);
 }
 
 .contact-info h2 {
@@ -225,4 +296,18 @@ header nav ul li a:active {
   position: absolute;
   line-height: 75px;
   font-size: 50px;
+}
+
+.contact-info ul {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  float: right;
+  width: 80%;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.contact-info ul li:hover {
+  text-decoration: underline var(--secondary-color);
 }
